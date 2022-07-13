@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(208, 208, 208);
 }
 .slider__container {
   height: 160px;
@@ -29,21 +30,18 @@ body {
   border: 2px solid black;
   border-radius: 5px;
 }
-.type-one {
-  height: 50px;
+.shuffler__slider {
+  background: transparent;
 }
-.type-two {
-  height: 35px;
+.shuffler__slider::-moz-range-track {
+  height: 4px;
+  background: #1ed760;
+  border-radius: 2px;
 }
-.type-three {
-  height: 30px;
-}
-.type-four {
-  height: 20px;
-}
-.type-five {
-  height: 10px;
-}
-.type-six {
-  height: 5px;
+.shuffler__slider::-moz-range-thumb {
+  background: white;
+  border: solid 1px white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
 }
