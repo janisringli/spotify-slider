@@ -22,26 +22,6 @@ const twentyOne = document.getElementById("21");
 const twentyTwo = document.getElementById("22");
 const twentyThree = document.getElementById("23");
 
-function randomSong() {
-  var heightArr = [
-    "11px",
-    "18px",
-    "25px",
-    "32px",
-    "39px",
-    "46px",
-    "53px",
-    "60px",
-    "100px",
-  ];
-  for (let i = 0; i < 23; i++) {
-    let random = Math.floor(Math.random() * heightArr.length);
-    const currentStripe = document.getElementById(i);
-    // currentStripe.style.height = heightArr[random];
-    console.log(currentStripe.style.height);
-  }
-}
-
 function wontStopNow() {
   one.style.height = "11px";
   two.style.height = "53px";
@@ -161,5 +141,23 @@ function nextSong() {
   } else {
     funcsArr[randomNumber]();
     oldNumber = randomNumber;
+  }
+}
+
+function randomSong() {
+  var heightArr = [
+    "11px",
+    "18px",
+    "25px",
+    "32px",
+    "39px",
+    "46px",
+    "53px",
+    "60px",
+  ];
+  for (let i = 1; i < 22; i++) {
+    let random = Math.floor(Math.random() * heightArr.length);
+    const currentStripe = document.getElementById(i + 1);
+    currentStripe.style.height = heightArr[random];
   }
 }

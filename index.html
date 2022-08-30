@@ -7,14 +7,12 @@
     <title>Spotify Slider</title>
   </head>
   <body>
-    <button onclick="nextSong()">Test</button>
-    <button onclick="randomSong()">randomSong</button>
-
+    
     <div class="slider__container">
       <div class="logo">
         <img class="spotify" src="./assets/spotify-brands.svg" alt="" />
       </div>
-      <div class="code-stripes" id="parent">
+      <div class="code-stripes">
         <div class="bar-code" id="1" style="height: 11px"></div>
         <div class="bar-code" id="2" style="height: 32px"></div>
         <div class="bar-code" id="3" style="height: 60px"></div>
@@ -40,11 +38,11 @@
         <div class="bar-code" id="23" style="height: 11px"></div>
       </div>
     </div>
-    <div class="slider__container">
+    <!-- <div class="slider__container">
       <div class="logo">
         <img class="spotify" src="./assets/spotify-brands.svg" alt="" />
       </div>
-      <div class="code-stripes" id="parent">
+      <div class="code-stripes">
         <div class="test-code" style="height: 11px">11</div>
         <div class="test-code" style="height: 18px">18</div>
         <div class="test-code" style="height: 25px">25</div>
@@ -54,8 +52,13 @@
         <div class="test-code" style="height: 53px">53</div>
         <div class="test-code" style="height: 60px">60</div>
       </div>
-    </div>
+    </div> -->
     <input type="range" class="shuffler__slider" name="Test" id="test" />
+    <br>
+    <br>
+    <button onclick="nextSong()">Test</button>
+    <button onclick="randomSong()">randomSong</button>
     <script src="./main.js"></script>
+
   </body>
 </html>
