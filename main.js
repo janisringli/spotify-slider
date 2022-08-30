@@ -155,9 +155,9 @@ function randomSong() {
     "53px",
     "60px",
   ];
-  for (let i = 1; i < 22; i++) {
+  for (let i = 2; i < 22; i++) {
     let random = Math.floor(Math.random() * heightArr.length);
-    const currentStripe = document.getElementById(i + 1);
+    const currentStripe = document.getElementById(i);
     currentStripe.style.height = heightArr[random];
   }
 }
