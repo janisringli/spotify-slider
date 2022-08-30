@@ -25,10 +25,10 @@ body {
   padding-left: 20px;
 }
 .bar-code {
-  width: 6px;
+  width: 4px;
   background-color: black;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: 0.5s;
 }
 .test-code {
